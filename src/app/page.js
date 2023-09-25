@@ -44,7 +44,7 @@ export default function Home() {
     <main className={styles.main}>
       {projects.map((project, index) => {
         return (
-          <div>
+          <div key={index}>
             <p>{project.title}</p>
           </div>
         )
